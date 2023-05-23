@@ -7,40 +7,72 @@ Alt + UP  |Alt + k|
 Alt + Down|Alt + j|
 
 ```javascript
+{
+	"terminal.integrated.enableMultiLinePasteWarning": false,
+	"git.autofetch": true,
+	"git.enableSmartCommit": true,
+	"explorer.confirmDelete": false,
+	"explorer.confirmDragAndDrop": false,
 
-{    
-    "vim.useCtrlKeys": true,
-    "vim.useSystemClipboard": true,
-    // Insert mode
-    "vim.insertModeKeyBindings": [
-      // In insert mode jj to escape
-      {
-        "before": ["j", "j"],
-        "after": ["<Esc>"]
-      }
-    ],
-    // Visual mode
-    "vim.visualModeKeyBindings": [
-      // In visual mode i goes to insert mode
-      {
-        "before": ["i"],
-        "after": ["<Esc>", "i"]
-      }
-    ],
-    // Escaping from vim for below commands
-    "vim.handleKeys": {
-      // Select all
-      "<C-a>": false,
-      // VS Code search in file
-      "<C-f>": false,
-      // VS Code new marker @ next occurence
-      "<C-d>": false,
-      // Copy
-      "<C-c>": false,
-      // Cut
-      "<C-x>": false,
-      // Paste
-      "<C-v>": false,
-    },
+	// Workbench
+	"workbench.colorTheme": "Default Dark+",
+	//Allow tabs to shrink when there is not enough space available to display all tabs at the same time.
+	"workbench.editor.tabSizing": "shrink",
+	"workbench.activityBar.visible": true,
+	"workbench.startupEditor": "newUntitledFile",
+	"diffEditor.wordWrap": "on",
+
+    //Appearance
+	"editor.cursorBlinking": "expand",
+    "editor.bracketPairColorization.enabled": false,
+	"editor.glyphMargin": false,
+	"editor.wordWrap": "on",
+
+	//Format
+	"editor.formatOnSave": true,
+	"editor.autoClosingBrackets": "never",
+	"editor.formatOnPaste": true,
+	"prettier.useTabs": true,
+	"prettier.singleQuote": true,
+	"prettier.arrowParens": "avoid",
+	"prettier.trailingComma": "none",
+	"prettier.jsxSingleQuote": true,
+	"editor.formatOnSaveMode": "modificationsIfAvailable",
+
+	//Vim
+	"vim.useCtrlKeys": true,
+	"vim.useSystemClipboard": true,
+	"vim.insertModeKeyBindings": [
+		{
+			"before": ["j", "j"],
+			"after": ["<Esc>"]
+		}
+	],
+	"vim.visualModeKeyBindings": [
+		{
+			"before": ["i"],
+			"after": ["<Esc>", "i"]
+		}
+	],
+	"vim.handleKeys": {
+		"<C-a>": false,
+		"<C-f>": false,
+		"<C-d>": false,
+		"<C-c>": false,
+		"<C-x>": false,
+		"<C-v>": false
+	},
+
+	//JS & TS
+	"javascript.suggestionActions.enabled": false,
+	"typescript.suggestionActions.enabled": false,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"typescript.updateImportsOnFileMove.enabled": "always",
+
+	//Terminal
+	"terminal.integrated.fontSize": 14,
+	"terminal.integrated.tabs.enabled": false,
+	// "window.zoomLevel": 1
 }
+
 ```
