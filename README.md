@@ -1,4 +1,4 @@
-# vscode-vim-settings
+# vscode settings
 
 ### Apart from below settings i also change in VS Code keyboard mappings:
 From      |To     |
